@@ -1,0 +1,16 @@
+# CPU-only setup that runs the official BlockPush checkpoints (tested with Python 3.10).
+# TensorFlow / tf-agents / d4rl are NOT needed: sha_exp/compat.py stubs them out.
+torch>=2.0
+gym==0.22.0
+pfrl==0.4.0
+pybullet>=3.1.6
+params_proto==2.10.5
+gin-config
+absl-py
+six
+pygame
+numpy<1.24
+scipy
+pandas
+matplotlib
+wandb  # imported by the official code; runs with WANDB_MODE=disabled
